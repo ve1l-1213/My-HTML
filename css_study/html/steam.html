@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        
+        
+        body{
+            background-image: url(https://cdn.fastly.steamstatic.com/store/promo/winter2024/tile_bg_winter_2024_b.webp);
+        }
+
+        .top-box{
+            display: flex;
+            position: relative;
+            border: 0px solid #171a21;
+            background-color: #171a21;
+            width: 100%;
+            height: 130px;
+            overflow: hidden;
+            
+        }
+
+        #in-top-box{
+            position: relative;
+            border: 0px solid #383f50;
+            box-sizing: border-box;
+            margin: auto;
+            width: 80%;
+            height: 130px;
+            overflow: hidden;
+        }
+        #ins-box {
+            position: relative;
+            border:1px solid green;
+            
+        }
+        .nav{
+            flex-wrap: wrap;
+            top:18px;
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            gap: 10px;
+        }
+        #logo{
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 200px;
+        }
+        li {
+            font-family: 'Roboto';
+            position: relative;
+            top: 20px;
+            list-style: none;
+        }
+        a {
+            color: #d2d4d5;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: larger;
+
+            &:hover{
+                color: #ffffff;
+            }
+
+        }
+        .main-box{
+            position: relative;
+            border: 1px solid #171a21;
+            width: 100%;
+            height: 1000px;
+        }
+        #video {
+            position: relative;
+            width: 100%;
+            height: auto;
+            top: 0px;
+            z-index: -1;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+<body style="margin: 0px;">
+    <div class="top-box">
+        
+        <div id="in-top-box">
+            
+            <ul class="nav">
+                <img id="logo" src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016">
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SUPPORT</a></li>
+            </ul>
+
+        </div>
+
+        
+    </div>
+    <div class="main-box">
+        <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="https://shared.fastly.steamstatic.com/store_item_assets/steam/clusters/sale_winter2024/36a01fe4331ab0ca600ff205/webm_page_bg_english.webm?t=1734118021">
+        <div class="main-box"></div>
+        </video>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
